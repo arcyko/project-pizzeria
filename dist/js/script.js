@@ -274,7 +274,6 @@
       /* TODO: Add validation */
       if (thisWidget.value !== newValue && !isNaN(newValue)) {
         thisWidget.value = newValue;
-        thisWidget.announce();
       }
       if (newValue < settings.amountWidget.defaultMin) {
         thisWidget.value = settings.amountWidget.defaultMin;
@@ -284,13 +283,14 @@
       }
 
       thisWidget.input.value = thisWidget.value;
+      thisWidget.announce();
     }
 
     initActions() {
       const thisWidget = this;
 
       thisWidget.input.addEventListener('change', function () {
-        thisWidget.setValue(thisWidget.value);
+        thisWidget.setValue(thisWidget.input.value);
       });
 
       thisWidget.linkDecrease.addEventListener('click', function (event) {
