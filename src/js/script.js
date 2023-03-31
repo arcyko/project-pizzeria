@@ -386,7 +386,7 @@
       const thisCart = this;
 
       thisCart.dom.toggleTrigger.addEventListener('click', function () {
-        classNames.cart.wrapperActive(thisCart.dom.wrapper);
+        thisCart.dom.wrapper.classList.toggle(classNames.cart.wrapperActive);
       });
     }
   }
