@@ -93,7 +93,9 @@
       &.active {
         opacity: 1;
       }
+
     }
+
   }
 
   &.active {
@@ -101,15 +103,16 @@
       @include accordion-open();
     }
 
-    .product__order,
-    .product__images {
+    .product__order, .product__images {
       opacity: 1;
     }
 
     .product__icon {
       transform: rotate(180deg);
     }
+
   }
+
 }
 
 .widget-amount {
@@ -120,4 +123,5 @@
     margin: 0 ($base-size / 2);
     padding: 0;
   }
+
 }

@@ -448,11 +448,9 @@
       const generatedDOM = utils.createDOMFromHTML(generatedHTML);
 
       /* add element to cart */
-      const cartContainer = document.querySelector(select.containerOf.cart);
+      thisCart.dom.productList.appendChild(generatedDOM);
 
-      cartContainer.appendChild(generatedDOM);
-
-      console.log('thisCart.products', thisCart.products);
+      console.log('adding product', menuProduct);
     }
   }
 
