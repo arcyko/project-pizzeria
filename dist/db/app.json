@@ -217,9 +217,17 @@
         {
           "id": "cake",
           "name": "Zio Stefano's Doughnut",
-          "amount": 1,
+          "amount": 2,
           "priceSingle": 9,
-          "price": 9,
+          "price": 18,
+          "params": {}
+        },
+        {
+          "id": "cake",
+          "name": "Zio Stefano's Doughnut",
+          "amount": 2,
+          "priceSingle": 9,
+          "price": 18,
           "params": {}
         }
       ],
@@ -239,9 +247,17 @@
         {
           "id": "cake",
           "name": "Zio Stefano's Doughnut",
-          "amount": 1,
+          "amount": 2,
           "priceSingle": 9,
-          "price": 9,
+          "price": 18,
+          "params": {}
+        },
+        {
+          "id": "cake",
+          "name": "Zio Stefano's Doughnut",
+          "amount": 2,
+          "priceSingle": 9,
+          "price": 18,
           "params": {}
         }
       ],
@@ -261,9 +277,17 @@
         {
           "id": "cake",
           "name": "Zio Stefano's Doughnut",
-          "amount": 1,
+          "amount": 2,
           "priceSingle": 9,
-          "price": 9,
+          "price": 18,
+          "params": {}
+        },
+        {
+          "id": "cake",
+          "name": "Zio Stefano's Doughnut",
+          "amount": 2,
+          "priceSingle": 9,
+          "price": 18,
           "params": {}
         }
       ],
@@ -283,9 +307,17 @@
         {
           "id": "cake",
           "name": "Zio Stefano's Doughnut",
-          "amount": 3,
+          "amount": 2,
           "priceSingle": 9,
-          "price": 27,
+          "price": 18,
+          "params": {}
+        },
+        {
+          "id": "cake",
+          "name": "Zio Stefano's Doughnut",
+          "amount": 2,
+          "priceSingle": 9,
+          "price": 18,
           "params": {}
         }
       ],
@@ -305,9 +337,9 @@
         {
           "id": "cake",
           "name": "Zio Stefano's Doughnut",
-          "amount": 3,
+          "amount": 1,
           "priceSingle": 9,
-          "price": 27,
+          "price": 9,
           "params": {}
         }
       ],
@@ -327,24 +359,29 @@
         {
           "id": "cake",
           "name": "Zio Stefano's Doughnut",
-          "amount": 3,
+          "amount": 1,
           "priceSingle": 9,
-          "price": 27,
+          "price": 9,
+          "params": {}
+        },
+        {
+          "id": "cake",
+          "name": "Zio Stefano's Doughnut",
+          "amount": 2,
+          "priceSingle": 9,
+          "price": 18,
           "params": {}
         }
       ],
       "id": 6
     },
     {
-      "address": {},
-      "phone": {},
-      "totalPrice": {
-        "0": {},
-        "1": {}
-      },
-      "subtotalPrice": {},
-      "totalNumber": {},
-      "deliveryFee": {},
+      "address": "abc",
+      "phone": "12333",
+      "totalPrice": 29,
+      "subtotalPrice": 9,
+      "totalNumber": 1,
+      "deliveryFee": 20,
       "products": [
         {
           "id": "cake",
@@ -358,15 +395,12 @@
       "id": 7
     },
     {
-      "address": {},
-      "phone": {},
-      "totalPrice": {
-        "0": {},
-        "1": {}
-      },
-      "subtotalPrice": {},
-      "totalNumber": {},
-      "deliveryFee": {},
+      "address": "abc",
+      "phone": "12333",
+      "totalPrice": 29,
+      "subtotalPrice": 9,
+      "totalNumber": 1,
+      "deliveryFee": 20,
       "products": [
         {
           "id": "cake",
@@ -380,15 +414,12 @@
       "id": 8
     },
     {
-      "address": {},
-      "phone": {},
-      "totalPrice": {
-        "0": {},
-        "1": {}
-      },
-      "subtotalPrice": {},
-      "totalNumber": {},
-      "deliveryFee": {},
+      "address": "abc",
+      "phone": "12333",
+      "totalPrice": 74,
+      "subtotalPrice": 54,
+      "totalNumber": 6,
+      "deliveryFee": 20,
       "products": [
         {
           "id": "cake",
@@ -397,20 +428,47 @@
           "priceSingle": 9,
           "price": 9,
           "params": {}
+        },
+        {
+          "id": "breakfast",
+          "name": "Zia Giulia's Breakfast",
+          "amount": 1,
+          "priceSingle": 9,
+          "price": 9,
+          "params": {
+            "coffee": {
+              "label": "Coffee type",
+              "options": {
+                "latte": "Latte"
+              }
+            }
+          }
+        },
+        {
+          "id": "breakfast",
+          "name": "Zia Giulia's Breakfast",
+          "amount": 4,
+          "priceSingle": 9,
+          "price": 36,
+          "params": {
+            "coffee": {
+              "label": "Coffee type",
+              "options": {
+                "latte": "Latte"
+              }
+            }
+          }
         }
       ],
       "id": 9
     },
     {
-      "address": {},
-      "phone": {},
-      "totalPrice": {
-        "0": {},
-        "1": {}
-      },
-      "subtotalPrice": {},
-      "totalNumber": {},
-      "deliveryFee": {},
+      "address": "abc",
+      "phone": "12333",
+      "totalPrice": 74,
+      "subtotalPrice": 54,
+      "totalNumber": 6,
+      "deliveryFee": 20,
       "products": [
         {
           "id": "cake",
@@ -419,119 +477,39 @@
           "priceSingle": 9,
           "price": 9,
           "params": {}
+        },
+        {
+          "id": "breakfast",
+          "name": "Zia Giulia's Breakfast",
+          "amount": 1,
+          "priceSingle": 9,
+          "price": 9,
+          "params": {
+            "coffee": {
+              "label": "Coffee type",
+              "options": {
+                "latte": "Latte"
+              }
+            }
+          }
+        },
+        {
+          "id": "breakfast",
+          "name": "Zia Giulia's Breakfast",
+          "amount": 4,
+          "priceSingle": 9,
+          "price": 36,
+          "params": {
+            "coffee": {
+              "label": "Coffee type",
+              "options": {
+                "latte": "Latte"
+              }
+            }
+          }
         }
       ],
       "id": 10
-    },
-    {
-      "address": {},
-      "phone": {},
-      "totalPrice": {
-        "0": {},
-        "1": {}
-      },
-      "subtotalPrice": {},
-      "totalNumber": {},
-      "deliveryFee": {},
-      "products": [
-        {
-          "id": "cake",
-          "name": "Zio Stefano's Doughnut",
-          "amount": 1,
-          "priceSingle": 9,
-          "price": 9,
-          "params": {}
-        }
-      ],
-      "id": 11
-    },
-    {
-      "address": {},
-      "phone": {},
-      "totalPrice": {
-        "0": {},
-        "1": {}
-      },
-      "subtotalPrice": {},
-      "totalNumber": {},
-      "deliveryFee": {},
-      "products": [
-        {
-          "id": "cake",
-          "name": "Zio Stefano's Doughnut",
-          "amount": 1,
-          "priceSingle": 9,
-          "price": 9,
-          "params": {}
-        }
-      ],
-      "id": 12
-    },
-    {
-      "address": {},
-      "phone": {},
-      "totalPrice": {
-        "0": {},
-        "1": {}
-      },
-      "subtotalPrice": {},
-      "totalNumber": {},
-      "deliveryFee": {},
-      "products": [
-        {
-          "id": "cake",
-          "name": "Zio Stefano's Doughnut",
-          "amount": 2,
-          "priceSingle": 9,
-          "price": 18,
-          "params": {}
-        }
-      ],
-      "id": 13
-    },
-    {
-      "address": {},
-      "phone": {},
-      "totalPrice": {
-        "0": {},
-        "1": {}
-      },
-      "subtotalPrice": {},
-      "totalNumber": {},
-      "deliveryFee": {},
-      "products": [
-        {
-          "id": "cake",
-          "name": "Zio Stefano's Doughnut",
-          "amount": 2,
-          "priceSingle": 9,
-          "price": 18,
-          "params": {}
-        }
-      ],
-      "id": 14
-    },
-    {
-      "address": {},
-      "phone": {},
-      "totalPrice": {
-        "0": {},
-        "1": {}
-      },
-      "subtotalPrice": {},
-      "totalNumber": {},
-      "deliveryFee": {},
-      "products": [
-        {
-          "id": "cake",
-          "name": "Zio Stefano's Doughnut",
-          "amount": 2,
-          "priceSingle": 9,
-          "price": 18,
-          "params": {}
-        }
-      ],
-      "id": 15
     }
   ]
 }

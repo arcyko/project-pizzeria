@@ -486,12 +486,12 @@
       const url = settings.db.url + '/' + settings.db.orders;
 
       const payload = {
-        address: thisCart.dom.address,
-        phone: thisCart.dom.phone,
-        totalPrice: thisCart.dom.totalPrice,
-        subtotalPrice: thisCart.dom.subtotalPrice,
-        totalNumber: thisCart.dom.totalNumber,
-        deliveryFee: thisCart.dom.deliveryFee,
+        address: thisCart.dom.address.value,
+        phone: thisCart.dom.phone.value,
+        totalPrice: thisCart.totalPrice,
+        subtotalPrice: thisCart.subtotalPrice,
+        totalNumber: thisCart.totalNumber,
+        deliveryFee: thisCart.deliveryFee,
         products: [],
       };
 
@@ -540,8 +540,7 @@
     update() {
       const thisCart = this;
 
-      const deliveryFee = settings.cart.defaultDeliveryFee;
-
+      thisCart.deliveryFee = settings.cart.defaultDeliveryFee;
       thisCart.totalNumber = 0;
       thisCart.subtotalPrice = 0;
       thisCart.totalPrice = 0;
@@ -553,13 +552,11 @@
       }
 
       // Check if the totalNumber of products in Cart is 0 then deliveryFee is 0
-      if (thisCart.totalNumber > 0) {
-        thisCart.dom.deliveryFee.innerHTML = deliveryFee;
-        thisCart.totalPrice = thisCart.subtotalPrice + deliveryFee;
-      } else {
-        thisCart.dom.deliveryFee.innerHTML = 0; // change delivery price to 0
+      if (thisCart.totalNumber == 0) {
+        thisCart.deliveryFee = 0;
       }
-
+      thisCart.dom.deliveryFee.innerHTML = thisCart.deliveryFee;
+      thisCart.totalPrice = thisCart.subtotalPrice + thisCart.deliveryFee;
       thisCart.dom.subtotalPrice.innerHTML = thisCart.subtotalPrice;
       thisCart.dom.totalNumber.innerHTML = thisCart.totalNumber;
 
@@ -584,7 +581,7 @@
       const productIndex = thisCart.products.indexOf(cartProduct);
 
       // Delete product information from array thisCart.products usin splice() method
-      thisCart.products.splice(productIndex);
+      thisCart.products.splice(productIndex, 1);
 
       // Run update method
       thisCart.update();
